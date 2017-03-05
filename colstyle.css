@@ -1,0 +1,84 @@
+*{ margin: 0px; padding: 0px; border: 0px; backface-visibility: hidden; }
+/*------------------ Fonts ------------------*/
+@font-face {
+    font-family: 'louiseItalic';
+    src: url('Louis-Italic.woff2') format('woff2'),
+         url('Louis-Italic.woff') format('woff'),
+         url('Louis-Italic.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+div{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*------------------ Re-usable class ------------------*/
+.cb-ab{
+    position: absolute;
+}
+.cb-rel{
+    position: relative;
+}
+.cb-set{
+    display:inline-block;
+    *display:inline;
+}
+.hide{
+    display: none;
+}
+.guide{
+    opacity: 0.4;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+/*------------------ Collapse Panel ------------------*/
+#invitation {
+	background: #000000;
+    border: 1px solid #6e6e6e;
+	box-sizing: border-box;
+    pointer-events: none;
+	cursor: pointer;
+	display: none;
+	overflow: hidden;
+}
+#invitation, .bg {
+	width: 300px;
+	height: 250px;
+}
+.expand-hotspot{
+    pointer-events: auto;
+    width: 100%;
+    height: 100%;
+}
+.cta{
+    width: 141px;
+    height: 25px;
+    left: 80px;
+    top: 213px;
+}
+.expand-btn{
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+.shimmer-mask {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.shimmer {
+    background: url('shimmer.png') no-repeat top left;
+    width: 200px;
+    height: 100px;
+    top: -50px;
+    left: 120px;
+}
